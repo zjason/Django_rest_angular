@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/angular.min.js"></script>
+</head>
+<body>
+  <h1>Sign up</h1>
+  <form action="http://127.0.0.1:8000/signup" method="post">
+    {% csrf_token %}
+    <input type="text" name="Username">
+    <input type="password" name="Password">
+    <input type="submit" value="Sign up">
+  </form>
+
+
+</body>
+</html>
